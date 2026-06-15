@@ -58,6 +58,24 @@ Abrir en el navegador:
 http://localhost:8080
 ```
 
+## Capturas de Pantalla
+
+### Repositorio en GitHub
+
+![Repositorio GitHub](screenshots/github.png)
+
+### Construccion de la Imagen Docker
+
+![Docker Build](screenshots/docker-build.png)
+
+### Ejecucion del Contenedor
+
+![Docker Run](screenshots/docker-run.png)
+
+### Aplicacion Funcionando
+
+![Aplicacion Web](screenshots/aplicacion.png)
+
 ## Autor
 
 Chamberlay Vega Gomez
