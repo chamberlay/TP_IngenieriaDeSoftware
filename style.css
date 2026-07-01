@@ -164,3 +164,8 @@ nav a:hover{
     margin-top: 15px;
     margin-bottom: 10px;
 }
+
+section:hover{
+    transform: translateY(-3px);
+    transition: .3s;
+}
