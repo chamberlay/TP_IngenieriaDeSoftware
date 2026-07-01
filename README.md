@@ -1,83 +1,94 @@
-# TP Proyecto - CV CON Git y Docker
+# TP Ingeniería de Software - Git y Docker
 
-## Descripcion
+## Descripción
 
-Este proyecto consiste en un Curriculum Vitae Web desarrollado utilizando HTML y CSS. El objetivo es presentar informacion profesional y academica en una pagina web estatica, aplicando conceptos de control de versiones con Git y contenedores mediante Docker.
+Este proyecto consiste en un Curriculum Vitae Web desarrollado utilizando **HTML5** y **CSS3**. Como parte de la evolución del proyecto, se incorporó una segunda página denominada **Proyectos**, permitiendo presentar algunos de los trabajos realizados durante la carrera.
 
-## Tecnologias Utilizadas
+El objetivo principal del trabajo práctico es aplicar conceptos de control de versiones con **Git**, trabajo con ramas (**Branches**), integración mediante **Merge**, contenerización con **Docker** y publicación tanto del código como de la imagen Docker.
+
+## Tecnologías utilizadas
 
 * HTML5
 * CSS3
 * Git
 * GitHub
 * Docker
+* Docker Hub
 * Nginx
 
-## Requisitos Previos
+---
+
+## Requisitos previos
 
 Antes de ejecutar el proyecto es necesario tener instalado:
 
 * Git
 * Docker Desktop
 
-## Instalacion
+---
 
-Clonar el repositorio:
+## Ejecución de la aplicación
+
+### Opción 1 - Ejecución local
+
+1. Clonar el repositorio:
 
 ```bash
 git clone https://github.com/chamberlay/TP_IngenieriaDeSoftware.git
 ```
 
-Ingresar al directorio del proyecto:
+2. Ingresar a la carpeta del proyecto:
 
 ```bash
-cd TP_Proyecto
+cd TP_IngenieriaDeSoftware
 ```
 
-## Construccion de la Imagen Docker
+3. Abrir el archivo `index.html` con cualquier navegador web.
 
-Ejecutar:
+---
+
+### Opción 2 - Ejecución con Docker
+
+#### Construir la imagen
 
 ```bash
 docker build -t cv-web .
 ```
 
-## Ejecucion del Contenedor
-
-Ejecutar:
+#### Ejecutar el contenedor
 
 ```bash
 docker run -d -p 8080:80 --name cv-container cv-web
 ```
 
-## Acceso a la Aplicacion
+#### Acceder a la aplicación
 
-Abrir en el navegador:
+Abrir el navegador y dirigirse a:
 
-```
+```text
 http://localhost:8080
 ```
 
-## Capturas de Pantalla
+---
 
-### Repositorio en GitHub
+## Repositorio en GitHub
 
-![Repositorio GitHub](screenshots/github.png)
+https://github.com/chamberlay/TP_IngenieriaDeSoftware
 
-### Construccion de la Imagen Docker
+## Imagen publicada en Docker Hub
 
-![Docker Build](screenshots/docker-build.png)
+https://hub.docker.com/r/cha1504/tp_ingenieriadesoftware
 
-### Ejecucion del Contenedor
+## GitHub Pages
 
-![Docker Run](screenshots/docker-run.png)
+https://chamberlay.github.io/TP_IngenieriaDeSoftware/
 
-### Aplicacion Funcionando
-
-![Aplicacion Web](screenshots/aplicacion.png)
+---
 
 ## Autor
 
-Chamberlay Vega Gomez
+**Chamberlay Vega Gomez**
 
-Trabajo Practico N°1 - Git y Docker
+Tecnicatura Superior en Desarrollo de Software - ISTEA
+
+Trabajo Práctico - Git y Docker
